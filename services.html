@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <title>{Title} | Services</title>
+        <link rel="shortcut icon" href="{Favicon}">
+        <link rel="alternate" type="application/rss+xml" href="{RSS}">
+        {block:Description}
+            <meta name="description" content="{MetaDescription}" />
+        {/block:Description}
+        
+        <link href='http://fonts.googleapis.com/css?family=Karla:400,700|Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
+        <link href='http://static.tumblr.com/j1ln7tw/Cjcmf6ztv/sosa.css' rel="stylesheet" type="text/css">
+        <meta name="image:Sidebar" content=""/>
+        <style>
+            body { width: 100%; color: #4c4c4c; }
+            .clear { clear: both; }
+            #wrapper { width: 960px; margin: 0 auto; background-color: #fff; }
+            #header { border-bottom: 1px #ddd solid; font-family: Karla, serif; }
+            #column1 { width: 300px; margin: 0 10px; float: left; font-family: Bitter, serif; }
+            #column2 { width: 300px; margin: 0 10px; float: left; font-family: Bitter, serif; }
+            #column3 { width: 300px; margin: 0 10px; float: left; font-family: Bitter, serif; }
+            .service { margin: 30px 5px; text-align: left;  }
+            .service h2 { line-height: .5em; }
+            #blurb { width: 75%; margin: auto; text-align: center; font-family: Karla, serif; }
+            #logodesc { display: block; float: left; margin-left: 20px; }
+            .post { padding: 20px 0 0 20px; border-bottom: 1px #ddd solid; }
+            ul.pages { display: inline; float: right; padding-right: 20px; list-style-type: none; }
+            li.pages { float: left; margin: 0 10px; }
+            /* fonts */
+            h1 { font-size: 32px; font-weight: 700; line-height: .5em; }
+            h1 a { color: #4c4c4c; }
+            h1 a:hover { text-decoration: none; }
+            h1 a:visited { color: #4c4c4c; }
+            h2 { font-size: 24px; font-weight: 500; line-height: 1.2em; }
+            h3 { font-size: 20px; font-weight: 300; line-height: 1em; letter-spacing: .05em; }
+            h3.title { float: left; display: block; width: 500px; line-height: 1.2em; }
+            h4 { font-size: 18px; font-weight: 700; line-height: 1em; letter-spacing: .05em; }
+            h6 { font-size: 12px; font-weight: 200; line-height: 1em; letter-spacing: .05em; }
+            p { font-size: 16px; line-height: 1.4em; letter-spacing: .05em; }
+            a { color: #0080ff; text-decoration: none; }
+            a:hover { text-decoration: underline; }
+            a:visited { color: #0080ff; }
+            #header p { font-size: 16px; line-height: .5em; letter-spacing: .05em; }
+            #content p { margin-right: 20px; }
+            .icon { font-family: Sosa; float: right; margin: 15px;  color: #ddd; font-size: 30px; }
+            .icon a { color: #ddd; }
+            .icon a:hover { color: #4c4c4c; text-decoration: none; }
+            .icon a:visited { color: #ddd; }
+            blockquote { margin-left: 20px; padding: 5px; border-left: 2px #ddd solid; }
+            .quote { float: left; width: 80%; margin-left: 20px; padding: 10px; border-left: 2px #ddd solid; }
+            .video { float: left; margin: 10px; }
+            .chat { float: left; width: 80%; }
+            ul.chat { list-style-type: none; margin-top: 0; }
+            li.chat { padding: 5px; margin-top: 10px; background-color: #ddd; }
+            .name { font-weight: 700; }
+            .audio { float: left; margin: 20px 10px 10px; }
+            .photo { float: left; margin: 20px 0 10px; }
+            .image-wrap { width: 250; height: 250; border-radius: 125em; -webkit-border-radius: 125em; -moz-border-radius: 125em; }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <div id="logodesc">
+                <h1><a href="/">{Title}</a></h1>
+                <!-- optional logo
+                <img src="http://placehold.it/200x100">
+                -->
+        
+                {block:Description}
+                    <p id="description">{Description}</p>
+                {/block:Description}
+                </div>
+                {block:HasPages}
+                    <ul class="pages">
+                        {block:Pages}
+                            <li class="pages"><h4><a href="{URL}">{Label}</a></h4></li>
+                        {/block:Pages}
+                    </ul>
+                {/block:HasPages}
+                <div class="clear"></div>
+            </div>
+            <div id="blurb">
+                <h2>This is space for you to make a bold statement about your service or offerings. Delete this in the template if you don't want it.</h2>
+            </div>
+            <div id="column1">
+                <div class="service">
+                    <h3>Service box #1</h3>
+                    <p>This is a special service we offer to our most valuable clients. Of course, all of our clients are valuable, so everyone gets this service. We're not that exclusive.</p>
+                </div>
+                <div class="service">
+                    <h3>Service box #1</h3>
+                    <p>This is a special service we offer to our most valuable clients. Of course, all of our clients are valuable, so everyone gets this service. We're not that exclusive.</p>
+                </div>
+            </div>
+            <div id="column2">
+                <div class="service">
+                    <h3>Service box #1</h3>
+                    <p>This is a special service we offer to our most valuable clients. Of course, all of our clients are valuable, so everyone gets this service. We're not that exclusive.</p>
+                </div>
+                <div class="service">
+                    <h3>Service box #1</h3>
+                    <p>This is a special service we offer to our most valuable clients. Of course, all of our clients are valuable, so everyone gets this service. We're not that exclusive.</p>
+                </div>
+            </div>
+            <div id="column3">
+                <div class="service">
+                    <h3>Service box #1</h3>
+                    <p>This is a special service we offer to our most valuable clients. Of course, all of our clients are valuable, so everyone gets this service. We're not that exclusive.</p>
+                </div>
+                <div class="service">
+                    <h3>Service box #1</h3>
+                    <p>This is a special service we offer to our most valuable clients. Of course, all of our clients are valuable, so everyone gets this service. We're not that exclusive.</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <p id="footer">
+                {block:PreviousPage}
+                    <a href="{PreviousPage}">&#171; Previous</a>
+                {/block:PreviousPage}
+    
+                {block:NextPage}
+                    <a href="{NextPage}">Next &#187;</a>
+                {/block:NextPage}
+    
+                <a href="/archive">Archive</a>
+            </p>
+        </div>
+    </body>
+</html>
