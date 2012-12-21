@@ -71,6 +71,8 @@
             .image-wrap { display: block; margin: 0 auto; width: 96px; height: 96px; border-radius: 48em; -webkit-border-radius: 48em; -moz-border-radius: 48em; }
             #socialicons { padding-left: 20px; }
             .social { display: inline-block; margin: 0 3px; }
+            .footer-link { margin-left: 10px; }
+            {CustomCSS}
         </style>
     </head>
     <body>
@@ -140,7 +142,9 @@
                     {/block:Text}
     
                     {block:Photo}
+                        {LinkOpenTag}
                         <div class="photo"><img src="{PhotoURL-500}" alt="{PhotoAlt}"/></div>
+                        {LinkCloseTag}
                         <div class="icon"><a href="{Permalink}">H</a></div>
                         <div class="clear"></div>
                         {block:Caption}
@@ -215,7 +219,7 @@
             
                 <div class="clear"></div>
             <div id="footer">
-                <p>Copyright 2013 <a href="/archive">Archive</a></p>
+                <p>Copyright 2013 <span class="footer-link"><a href="/archive">Archive</a></span> <span class="footer-link"><a href="{RSS}">RSS</a></p>
             </div>
         </div>
         
